@@ -1,0 +1,112 @@
+/* all padding */
+.p-10 {
+    padding: 10px;
+}
+.p-inline {
+    padding-inline: 15px;
+}
+.p-block-1{
+    padding-block: 33px;
+}
+.p-block-2{
+    padding-block: 20px;
+}
+
+.m-left {
+    margin-left: auto;
+}
+
+/* all margin */
+.m-10 {
+    margin: 10;
+}
+/* flex box */
+.d-grid {
+    display: grid;
+}
+.d-flex {
+display: flex;
+}
+.g-10 {
+    gap: 10px;
+}
+.g-15 {
+    gap: 15px;
+}
+.g-20 {
+    gap: 20px;
+}
+.g-30 {
+    gap: 30px;
+}
+.g-50 {
+    gap: 50px;
+}
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-c-y {
+    display: flex;
+    align-items: center;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-1 {
+    flex:1;
+}
+.gap-1 {
+    gap: 1.5rem;
+}
+.gap-rem {
+    gap: 1rem;
+}
+
+/* borders and radius*/
+.b-none {
+    border: none;
+}
+.br-r {
+    border-right: 1px solid #e7e7e7;
+}
+.br-l {
+    border-left: 1px solid #e7e7e7;
+}
+.br-top {
+    border-top: 1px solid #e7e7e7;
+}
+.br-bottom {
+    border-bottom: 1px solid #e7e7e7;
+}
+.br-all {
+    border: 1px solid #e7e7e7;
+}
+
+.br-rad-5 {
+    border-radius: 5px;
+}
+
+.br-rad-8 {
+    border-radius: 8px;
+}
+/* positions */
+.p-relative {
+    position: relative;
+
+}
+.p-absolute {
+    position: absolute;
+}
+
+/* text */
+.text-c {
+    text-align: center;
+}
+.w-space {
+    white-space: nowrap;
+}
+
