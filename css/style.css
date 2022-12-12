@@ -1603,6 +1603,10 @@ margin-top: 20px;
     font: 1.3rem var(--ff-header);
     color: var(--f-clr-banner);
 }
+.copy-right p span {
+    display: inline-block;
+    color: #469d5b;
+}
 
 .social-links 
 {
