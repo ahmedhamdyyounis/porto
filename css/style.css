@@ -2029,11 +2029,6 @@ color: gray;
 
 
 /* container media */
-@media (min-width:576px) {
-    .container {
-        max-width: 540px;
-    }
-}
 
 /* small  */
 @media (min-width: 768px) {
