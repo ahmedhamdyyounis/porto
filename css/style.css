@@ -326,6 +326,9 @@ cursor: pointer;
 
 
 /* header start */
+.main-header {
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
 .main-header .container 
 {
     gap: 70px;
@@ -1381,6 +1384,11 @@ color: gray;
 
 }
 
+.coffee-banners img {
+    width: 100%;
+    }
+
+
 
 /* end coffee banner  */
 
@@ -2072,7 +2080,6 @@ font-size: 1.2rem;
         display: none;
     }
     .coffee-banners {
-        display: none;
     }
     .sign-in {
         display: none;
