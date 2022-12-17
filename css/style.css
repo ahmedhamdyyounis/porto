@@ -29,12 +29,12 @@
 }
 
 
-
 /* global classes */
 
 .container 
 {
     margin-inline: auto;
+    overflow: hidden;
 }
 
 .product-section 
@@ -51,7 +51,7 @@
 
 .sec-title 
 {
-    font: 700 2.5rem var(--ff-header) ;
+    font: 700 2.2rem var(--ff-header) ;
     white-space: nowrap;
     color: black;
 
@@ -59,7 +59,7 @@
 
 .sec-title-desc 
 {
-    font: 400 1.35rem  var(--ff-header)  ;
+    font: 300 1.3rem  var(--ff-header)  ;
     color: var(--f-clr-banner);
     white-space: nowrap;
     margin-bottom: 15px;
@@ -220,7 +220,7 @@ cursor: pointer;
 .banner .lang-and-currency .currency  a
 {
     color: var(--f-clr-banner);
-    font: 1.18rem var(--ff-header);
+    font: 1rem var(--ff-header);
 }
 
 .banner .lang-and-currency .currency .direct > li::after 
@@ -232,7 +232,7 @@ cursor: pointer;
     width: 10px;
     height: 10px;
     right: -13px;
-    top: 60%;
+    top: 46%;
     transform: translatey(-50%);
     color: green;
 }
@@ -343,6 +343,7 @@ cursor: pointer;
 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: var(--f-clr-banner-hover);
 }
 
 .logo img 
@@ -1091,26 +1092,27 @@ display: none;
 
 .attractive .container i 
 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--f-clr-banner-hover);
     transition: 0.5s;
 }
 
 .attractive .container div:hover i 
 {
-    transform: scale(1.25,1.25);  
+    transform: scale(120%);  
 }
 
 .attractive .container h4 
 {
     font: 1.5rem var(--ff-header);
-color: rgb(44, 44, 44);
-white-space: nowrap;
+    color: rgb(44, 44, 44);
+    white-space: nowrap;
+    font-weight: bold;
 }
 
 .attractive .container p 
 {
-    font: 1.25rem var(--ff-header);
+    font: 1.3rem var(--ff-header);
     color: var(--f-clr-banner);
     line-height: 2;
     white-space: nowrap;
@@ -1189,13 +1191,11 @@ white-space: nowrap;
     font-family: var(--ff-header);
     border: 2px solid rgb(219, 219, 219);
     transition: 0.2s;
-}
-
-.sec-temp-header li
-{
     color: black;
     font-weight: 600;
 }
+
+
 
 .sec-temp-header li a 
 {
@@ -1262,7 +1262,7 @@ white-space: nowrap;
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: var(--f-clr-banner-hover);
+    background-color: hsl(135, 39%, 55%);
     text-align: center;
     color: white;
     font-size: 1.5rem;
@@ -1271,6 +1271,7 @@ white-space: nowrap;
     font-family: var(--ff-header);
     display: none;
     transition: 0.3s;
+    z-index: 500;
 }
 
 .pro-img-wrapper:hover 
@@ -1642,11 +1643,10 @@ margin-top: 20px;
 
 .social-links i 
 {
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
+    font-size: 1.3rem;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    border: 1px solid rgb(231, 231, 231);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2081,6 +2081,19 @@ font-size: 1.2rem;
     .shop-left-sec .filter {
         display: block;
     }
+    .cart .cart-toggle-menu {
+        display: none!important ;
+    }
+
+    .main-header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        background-color: white;
+        width: 100%;
+    }
+    
 }
 
 
@@ -2206,10 +2219,6 @@ font-size: 1.2rem;
         padding: 0px 20px;
     }
 
-    .right-sec .user 
-     {
-        display: none !important ;
-    }
     .brands-wrapper img:first-child,
     .brands-wrapper img:nth-child(2),
     .brands-wrapper img:nth-child(3) {
@@ -2310,6 +2319,21 @@ font-size: 1.2rem;
     .shop-right-sec .fa-table-cells {
         display: none;
     }
+    .cart .amount {
+        display: none;
+    }
+.product-section .container .carousal .card {
+    min-height: 160px;
+}
+.sec-temp-header li {
+    font-size: 1.2rem;
+}
+.newsletter .container form button {
+    max-width: 100px;
+    font-size: 1.2rem;
+    padding-inline: 60px;
+}
+
 }
 
 
