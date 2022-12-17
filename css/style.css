@@ -34,7 +34,6 @@
 .container 
 {
     margin-inline: auto;
-    overflow: hidden;
 }
 
 .product-section 
@@ -223,6 +222,10 @@ cursor: pointer;
     font: 1rem var(--ff-header);
 }
 
+.banner .lang-and-currency .currency .direct {
+    z-index: 20000;
+}
+
 .banner .lang-and-currency .currency .direct > li::after 
 {
     content: "\f107";
@@ -235,11 +238,13 @@ cursor: pointer;
     top: 46%;
     transform: translatey(-50%);
     color: green;
+
 }
 
 .banner .lang-and-currency .currency .sub-currency > li:hover {
     background-color: rgb(212, 212, 212);
     transition: 0.3s;
+
 }
 .banner .lang-and-currency .currency .sub-currency > li {
     padding: 6px 11px;
@@ -444,7 +449,7 @@ cursor: pointer;
 
 .cart  .fa-bag-shopping:after 
 {
-    content: "0";
+    content: "2";
     position: absolute;
     display: flex;
     justify-content: center;
@@ -1216,6 +1221,7 @@ display: none;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+    overflow: hidden;
 }
 
 .product-temp 
@@ -1947,10 +1953,6 @@ font-size: 1.2rem;
 
 @media (max-width:991px) 
 {
-    .product-section .container .carousal
-    {
-        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-    }
 }
 
 
@@ -2003,6 +2005,11 @@ font-size: 1.2rem;
 
 @media (max-width:993px) 
 {
+    .product-section .container .carousal
+    {
+        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    }
+
     .header .container 
     {
         padding: 30px 5px !important;
@@ -2333,7 +2340,9 @@ font-size: 1.2rem;
     font-size: 1.2rem;
     padding-inline: 60px;
 }
-
+.product-section .container .carousal .card .bg-wrapper {
+    width: 120%;
+}
 }
 
 
