@@ -29,6 +29,10 @@
 .d-flex {
 display: flex;
 }
+.g-8 {
+    gap: 8px;
+}
+
 .g-10 {
     gap: 10px;
 }
