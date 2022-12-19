@@ -347,7 +347,18 @@ cursor: pointer;
     display: none;
 }
 
-.logo i 
+.toggle-menu .mob-menu {
+    display: none;
+}
+
+
+.main-wrapper {
+    padding-left: 100px;
+}
+
+
+.logo > i, 
+.fa-bars
 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -1171,14 +1182,14 @@ display: none;
 {
     right: 0px;
     box-shadow: -124px -13px 196px 61px rgb(255 255 255);
-    z-index: 100;
+    z-index: 1000;
 }
 
 .sec-temp .left-btn 
 {
     left: 0px;
     box-shadow: 124px -13px 196px 61px rgb(255 255 255);
-    z-index: 100;
+    z-index: 1000;
 }
 
 .sec-temp-header 
@@ -1232,6 +1243,7 @@ display: none;
     display: grid;
     gap: 20px;
     margin-block: 30px;
+        padding: 8px;
 }
 
 .pro-img-wrapper 
@@ -1380,12 +1392,15 @@ color: gray;
 }
 .banners-wrapper .first-banner 
 {
-    overflow: hidden;
 
 }
 
 .coffee-banners img {
     width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    vertical-align: middle;
+    display: block;
     }
 
 
@@ -1907,7 +1922,10 @@ font-size: 1.2rem;
 }
 
 
-
+.mob-menu-wrapper {
+    display: none;
+    
+}
 
 /* col end  */
 
@@ -2041,6 +2059,15 @@ font-size: 1.2rem;
     .container .toggle-menu 
     {
         display: block;
+
+    }
+    
+
+    .container .toggle-menu #xmark {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
     }
 
     .logo img 
@@ -2079,8 +2106,7 @@ font-size: 1.2rem;
     .brands-wrapper img:nth-child(2) {
         display: none;
     }
-    .coffee-banners {
-    }
+
     .sign-in {
         display: none;
     }
@@ -2107,6 +2133,53 @@ font-size: 1.2rem;
         background-color: white;
         width: 100%;
     }
+
+    .container .toggle-menu .mob-menu-wrapper{
+        position: absolute;
+        width: 100%;
+        background: #0000006b;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 100000;
+    }
+
+    .toggle-menu .mob-menu {
+        position: absolute;
+    display: block;
+    padding-block: 20px;
+    top: 0px;
+    width: 100%;
+    max-width: 260px;
+    background-color: #1d1e20;
+    height: 100vh;
+}
+
+.toggle-menu .mob-menu .mob-row {
+    padding-inline: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.toggle-menu .mob-menu .mob-row:not(:last-child) {
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
+.toggle-menu .mob-menu .mob-row p {
+    font-family: var(--ff-header);
+    color: white;
+    font-size: 1.30rem;
+    font-weight: 300;
+}
+.toggle-menu .mob-menu .mob-row i {
+       font-size: 1.5rem;
+    color: white;
+}
+.all-mob-sec {
+margin-top: 30px;
+}
+
+
+
     
 }
 
