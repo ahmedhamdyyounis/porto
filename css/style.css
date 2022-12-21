@@ -92,7 +92,7 @@ cursor: pointer;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: 0.5s;
+    transition: all 0.5s ease;
     z-index: -1;
 }
 
@@ -143,6 +143,8 @@ cursor: pointer;
     color: rgba(44,44,44,44);
     white-space: nowrap;
 } 
+
+
 
 .product-section .container .carousal .card p
 {
@@ -243,7 +245,7 @@ cursor: pointer;
 
 .banner .lang-and-currency .currency .sub-currency > li:hover {
     background-color: rgb(212, 212, 212);
-    transition: 0.3s;
+    transition: all 0.5s ease;
 
 }
 .banner .lang-and-currency .currency .sub-currency > li {
@@ -257,7 +259,7 @@ cursor: pointer;
     top: 18px;
     padding-block: 5px;
     display: none;
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 .banner .customer-help 
 {
@@ -282,7 +284,7 @@ cursor: pointer;
 .banner .customer-help a:hover i
 {
     color: var(--f-clr-banner-hover);
-    transition:0.1s;
+    transition:all 0.5s ease;
 }
 
 .banner .customer-help h3  
@@ -440,7 +442,7 @@ cursor: pointer;
 .right-sec .cart 
 {
     position: relative;
-    transition: 0.3s;
+    transition: all 0.5s ease;
     cursor: pointer;
 }
 
@@ -506,7 +508,7 @@ cursor: pointer;
     padding: 15px 15px 27px 15px;
     font-family: var(--ff-header);
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 20%);
-    transition: 0.3s;
+    transition: all 0.5s ease;
     background-color: white;
     z-index: 100000;
     border-radius: 8px;
@@ -540,7 +542,7 @@ cursor: pointer;
 {
     display: block;
     bottom: -120px;
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 
 .cart  .fa-bag-shopping 
@@ -582,7 +584,7 @@ cursor: pointer;
 {
     padding-inline: 20px;
     flex-basis: 250px;
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 
 .menu-items .container .all-departments .all-dep-sub-menu
@@ -600,7 +602,7 @@ cursor: pointer;
     border-color: #e7e7e7;
     border-width: 1px 0px 1px 1px;
     border-style:solid ;
-    transition: 0.3s ;
+    transition: all 0.5s ease ;
 }
 
 .menu-items .container .all-departments:hover .all-dep-sub-menu 
@@ -689,7 +691,7 @@ cursor: pointer;
     max-width: fit-content;
     border: 1px solid #e7e7e7;
     padding: 40px;
-    transition: all 0.3s;
+    transition: all 0.5s;
     box-shadow: 0px 30px 28px 28px rgb(0 0 0 / 5%);
 }
 
@@ -728,7 +730,7 @@ cursor: pointer;
 
 .sub-menu-temp h3:hover {
     color: #469d5b !important;
-    transition: 0.2s;
+    transition: all 0.5s ease;
 }
 .brands-electronics  
 {
@@ -891,6 +893,7 @@ display: none;
     left: -20px;
     box-shadow: 0px 19px 50px rgb(0 0 0 / 15%);
     top: 42px!important;
+    transition: all 0.9s ease;
 
 }
 .menu-items .container .menu .shop-menu h3:hover {
@@ -903,7 +906,7 @@ display: none;
 .menu-items .container .menu a
 {
     color: var(--f-clr-banner);
-    transition: 0.2s;
+    transition: all 0.5s ease;
     font:400 1.5rem var(--ff-header) ;
 }
 
@@ -960,7 +963,7 @@ display: none;
     height: 6rem;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.5);
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 
 .banner-wrapper:after 
@@ -1113,7 +1116,7 @@ display: none;
 {
     font-size: 2.5rem;
     color: var(--f-clr-banner-hover);
-    transition: 0.5s;
+    transition: all 0.5s ease;
 }
 
 .attractive .container div:hover i 
@@ -1159,14 +1162,14 @@ display: none;
     width: 4rem;
     height: 9rem;
     background-color: rgb(255, 255, 255);
-    transition: 0.3s;
+    transition: all 0.5s ease;
     border: 1px solid rgb(219, 219, 219);
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 
 .sec-temp button:hover i 
 {
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 
 .sec-temp button:hover 
@@ -1209,7 +1212,7 @@ display: none;
     font-size: 1.35rem;
     font-family: var(--ff-header);
     border: 2px solid rgb(219, 219, 219);
-    transition: 0.2s;
+    transition: all 0.5s ease;
     color: black;
     font-weight: 600;
 }
@@ -1274,7 +1277,7 @@ display: none;
     border: 1px solid rgb(211, 211, 211);
     background-color: white;
     display: none;
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 
 
@@ -1291,7 +1294,7 @@ display: none;
     font-weight: 600;
     font-family: var(--ff-header);
     display: none;
-    transition: 0.3s;
+    transition: all 0.5s ease;
     z-index: 500;
 }
 
@@ -1464,6 +1467,7 @@ color: gray;
 
 .items-wrapper 
 {
+    position: relative;
     display: flex;
     gap: 30px;
     padding: 30px ;
@@ -1472,8 +1476,6 @@ color: gray;
 
 .items-wrapper .item 
 {
-    width: 100%;
-    display: block;
 }
 .item .receipe-img-wrapper {
     overflow: hidden;
@@ -1485,7 +1487,7 @@ color: gray;
     display: block;
     max-width: 100%;
     height: auto; 
-    transition: 0.2s;
+    transition: all 0.5s ease;
 }
 
 
@@ -1542,7 +1544,7 @@ margin-top: 20px;
 .newsletter .subscribe-content i 
 {
     font-size: 6rem;
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 
 .newsletter .subscribe-content h3 
@@ -1595,7 +1597,7 @@ margin-top: 20px;
     border: none;
     white-space: nowrap;
     cursor: pointer;
-    transition: 0.2s;
+    transition: all 0.5s ease;
     font:700  1.5rem var(--ff-header);
 }
 
@@ -1680,7 +1682,7 @@ margin-top: 20px;
     justify-content: center;
     align-items: center;
     margin-right: 5px;
-    transition: 0.2s;
+    transition: all 0.5s ease;
 }
 
 .links 
@@ -1767,7 +1769,7 @@ margin-top: 20px;
     font-family: var(--ff-header);
     font-weight: 500;
     color: var(--f-clr-banner);
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 .product-content img {
     height: 100px;
@@ -1897,7 +1899,7 @@ font-size: 1.2rem;
 }
 .col .shop-right-sec> i {
     font-size: 2rem;
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 .col .shop-right-sec> i:hover,
 .col .shop-right-sec .active {
@@ -1930,6 +1932,12 @@ font-size: 1.2rem;
 /* col end  */
 
 /* shop end */
+.d-none {
+    display: none !important;
+}
+.d-block {
+    display: block !important;
+}
 
 
 
@@ -2164,7 +2172,7 @@ font-size: 1.2rem;
 .toggle-menu .mob-menu .mob-row:not(:last-child) {
     border-bottom: 1px solid rgb(41, 41, 41);
 }
-.toggle-menu .mob-menu .mob-row p {
+.toggle-menu .mob-menu .mob-row a {
     font-family: var(--ff-header);
     color: white;
     font-size: 1.30rem;
@@ -2233,37 +2241,42 @@ margin-top: 30px;
         gap: 15px;
     }
 
-    .item.twoo 
+    .twoo , .onee
     {
-        display: none;
         overflow: hidden;
+        transform: 0.9s;
     }
+
+
+
+
 
     .options 
     {
-        display: block;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        bottom: 10px;
+        left: 50%;
     }
 
     .options span 
     {
-        position: absolute;
-        bottom: -18px;
-        transform: translateX(-50%);
         width: 10px;
         height: 10px;
         border-radius: 50%;
+        cursor: pointer;
+
     }
 
-    .options span:first-child 
-    {
-        left: 47%;
-        cursor: pointer;
-        background-color: var(--f-clr-banner-hover);
+
+     .act {
+        background-color: var(--f-clr-banner-hover)!important;
     }
 
     .options span:last-child 
     {
-        right: 47%;
         background-color: rgb(172, 172, 172);
     }
 
@@ -2272,10 +2285,13 @@ margin-top: 30px;
         background-color: var(--f-clr-banner-hover);
     }
 
-    .options span:last-child:hover  span:first-child 
+    .options span
     {
         background-color: rgb(172, 172, 172);
     }
+
+
+
 
     .sec-title-desc {
         white-space: normal;
