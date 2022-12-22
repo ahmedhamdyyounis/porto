@@ -49,3 +49,22 @@ opt1.onclick = function () {
 }
 
 
+//popup close
+
+let close = document.getElementById("close")
+let popUp = document.getElementById("popup")
+
+
+close.onclick = function () {
+    popUp.classList.add("d-none")
+}
+
+function popAppear() {
+    popUp.style.cssText = "display:block;"
+}
+
+setTimeout(popAppear, 3000)
+
+
+
+
