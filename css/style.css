@@ -1096,7 +1096,138 @@ display: none;
 /* end landing banner */
 
 
+/* start popup */
+.popup {
+    position: absolute;
+    z-index: 1000000;
+    width: 100% ;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.192);
+    display: none;
+    background-image: url(../media/);
+}
 
+.popup  .overlay{
+    position: relative;
+    height: 100%;
+}
+
+.popup .card {
+
+    padding: 30px;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup a {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.popup a i {
+    font-size: 15px;
+    color: #333;
+    opacity: 50%;
+}
+
+.popup a i:hover {
+    font-size: 15px;
+    opacity: 1;
+}
+
+.popup .card .content {
+    max-width: 70%;
+}
+.popup .card .content h3{
+    margin: 24px 0 5px;
+    color: #313131;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--ff-header);
+}
+.popup .card .content p{
+    font-size: 1.4rem;
+    line-height: 1.85;
+    letter-spacing: -0.02em;
+    margin-bottom: 2.4rem;
+    font-family: var(--ff-header);
+    color: var(--f-clr-banner);
+}
+
+.news-letter input:first-child {
+    background-color: #e9e9e9;
+    outline: none;
+    border: 0;
+    padding:10px 20px ;
+    border-radius: 50px 0 0 50px;
+    font-size: 15px;
+    font-family: var(--ff-header);
+    height: auto;
+    caret-color: var(--f-clr-banner-hover);
+}
+
+.popup img {
+    max-width: 95px;
+}
+.news-letter input:last-child {
+    border-radius: 0 50px 50px 0;
+    padding:10px 10px ;
+    height: auto;
+    font-size: 15px;
+    font-family: var(--ff-header);
+    border: none;
+    background-color: var(--f-clr-banner-hover);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.news-letter input:last-child:hover {
+    opacity: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end popup */
 
 /* start attractive */
 .attractive 
@@ -2438,6 +2569,31 @@ margin-top: 30px;
 }
 .product-section .container .carousal .card .bg-wrapper {
     width: 120%;
+}
+
+.popup .card .content {
+    width: 100%;
+    max-width: 100%;
+
+}
+.news-letter {
+    width: 100%;
+}
+
+.news-letter input:first-child {
+    width: 65%;
+    font-size: 13px;
+
+}
+
+.news-letter input:last-child {
+    width: 25%;
+    font-size: 13px;
+    margin: 0;
+}
+
+.popup .card .content p{
+    font-size: 12px;
 }
 }
 
