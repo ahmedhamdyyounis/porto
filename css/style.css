@@ -4,6 +4,15 @@
     WhatsApp: +201278072216
 */
 
+.fa-angle-up {
+    display: none!important;
+}
+
+.sub-categories {
+    display: none!important;
+}
+
+
 
 :root {
     --fs-banner:1.2rem;
@@ -590,8 +599,8 @@ cursor: pointer;
 .menu-items .container .all-departments .all-dep-sub-menu
 {
     position: absolute;
-    display: none;
-    top: 50px;
+    visibility: hidden;
+    top: 65px;
     left: 0;
     width: 120%;
     height: fit-content;
@@ -602,14 +611,14 @@ cursor: pointer;
     border-color: #e7e7e7;
     border-width: 1px 0px 1px 1px;
     border-style:solid ;
-    transition: all 0.5s ease ;
+    transition: all 0.3s ;
 }
 
 .menu-items .container .all-departments:hover .all-dep-sub-menu 
 {
-    display: block;
+    visibility: visible;
     z-index: 1001;
-    top: 63px;
+    top: 70px;
 }
 
 .all-departments .all-dep-sub-menu .sub-main-list 
@@ -682,10 +691,11 @@ cursor: pointer;
 }
 .all-main-sub
 {
+    z-index: -1;
     position: absolute;
-    display: none;
+    visibility: hidden;
     background-color: white;
-    left: 200px;
+    left: 297px;
     top: -1px;
     z-index: -1;
     max-width: fit-content;
@@ -697,7 +707,7 @@ cursor: pointer;
 
 .sub-main-list .sub-menu-temp:hover .all-main-sub 
 {
-    display: block;
+    visibility: visible;
     left: 297px;
     z-index: 1000;
 }
@@ -1023,6 +1033,11 @@ display: none;
     letter-spacing: 0.5rem;
     white-space: nowrap;
     font: 2rem var(--ff-header);
+    /* animation */
+    animation-fill-mode: both;
+    animation-name: fadeInDownShorter;
+    animation-timing-function: ease-out;
+
 }
 
 .banner-wrapper .banner-overlay .content h3 
@@ -1112,7 +1127,17 @@ display: none;
     height: 100%;
 }
 
+.popup-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
 .popup .card {
+    z-index: 2;
 
     padding: 30px;
     width: 80%;
@@ -2070,6 +2095,10 @@ font-size: 1.2rem;
     display: block !important;
 }
 
+.mob-close-empty{
+    display: none;
+}
+
 
 
 
@@ -2283,6 +2312,7 @@ font-size: 1.2rem;
         z-index: 100000;
     }
 
+
     .toggle-menu .mob-menu {
         position: absolute;
     display: block;
@@ -2298,6 +2328,7 @@ font-size: 1.2rem;
     padding-inline: 20px;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    position: relative;
 }
 
 .toggle-menu .mob-menu .mob-row:not(:last-child) {
@@ -2315,6 +2346,25 @@ font-size: 1.2rem;
 }
 .all-mob-sec {
 margin-top: 30px;
+}
+
+
+
+.all-mob-sec .sub-categories {
+    margin-bottom: 10px;
+
+
+}
+.all-mob-sec .sub-categories li {
+    font-size: 13px;
+    border-bottom: 1px solid red;
+}
+.all-mob-sec .sub-categories a {
+    margin-left: 15%;
+    padding: 10px;
+    color: white;
+    font-family: var(--ff-header);
+    font-weight: 100;
 }
 
 
@@ -2595,6 +2645,19 @@ margin-top: 30px;
 .popup .card .content p{
     font-size: 12px;
 }
+
+.mob-close-empty{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+
+}
+
+
 }
 
 
