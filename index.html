@@ -23,23 +23,23 @@
         <!-- popup start -->
         <section class="popup" id="popup">
             <div class="overlay">
+                <div class="popup-wrapper" id="popup-wrapper">
+                </div>    
                 <div class="card">
-                    <div>
-                        <img src="./media/logo.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>SUBSCRIBE TO NEWSLETTER </h3>
-                        <p>Subscribe to the Porto mailing list to receive updates on new arrivals, special offers and our promotions.</p>
-                    </div>
-                    <div class="news-letter">
-                        <input type="text" placeholder="Your email address">
-                        <input type="submit" value="SUBMIT">
-                    </div>
-                    <a href="#" class="close" id="close"><i class="fa-solid fa-xmark"></i></a>
+                        <div>
+                            <img src="./media/logo.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>SUBSCRIBE TO NEWSLETTER </h3>
+                            <p>Subscribe to the Porto mailing list to receive updates on new arrivals, special offers and our promotions.</p>
+                        </div>
+                        <div class="news-letter">
+                            <input type="text" placeholder="Your email address">
+                            <input type="submit" value="SUBMIT">
+                        </div>
+                        <a href="#" class="close" id="close"><i class="fa-solid fa-xmark"></i></a>
                 </div>
-
             </div>
-
         </section>
 
         <!-- popup end -->
@@ -118,6 +118,7 @@
                 <div class="toggle-menu">
                     <a  href="#" id="bars"><i class="hamburger | fa-solid fa-bars" ></i></a>
                     <div class="mob-menu-wrapper" id="mob-menu-wrapper">
+                        <div class="mob-close-empty" id="mob-close-empty"></div>
                     <div class="mob-menu">
                         <a href="#" id="xmark"><i class=" | fa-solid fa-xmark" style="color: white;" ></i></a>
                         <div class="all-mob-sec">
@@ -125,13 +126,21 @@
                                 <a href="index.html">Home</a>
                             </div>
                             <div class="mob-row | flex-between">
+                                
                                 <a href="sub-pages/shop.html">Shop</a>
                                 <i class="fa-solid fa-angle-down"></i>
                             </div>
                             <div class="mob-row | flex-between">
                                 <a href="index.html">Categories</a>
                                 <i class="fa-solid fa-angle-down"></i>
+                                <i class="fa-solid fa-angle-up " style="display: block;"></i>
                             </div>
+
+                            <ul class="sub-categories">
+                                <li><a href="#">Alaa</a></li>
+                                <li><a href="#">Rahoufa</a></li>
+                            </ul>
+
                             <div class="mob-row | flex-between">
                                 <a href="index.html">Products</a>
                                 <i class="fa-solid fa-angle-down"></i>
@@ -776,7 +785,7 @@
         <!-- start popular dep -->
         <section class="product-section">
             <div class="container">
-                <h1 class="sec-title">
+                <h1 class="sec-title" id="sec-title">
                     popular departments
                 </h1>
                 <p class="sec-title-desc">
@@ -785,7 +794,7 @@
                 <div class="carousal">
                     <div class="card vegitables">
                         <div class="bg-wrapper">
-                            <div class="content">
+                            <div class="content" id="vv">
                                 <h1>Vegetables</h1>
                                 <p>1 Product</p>
                             </div>
