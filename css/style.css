@@ -2358,6 +2358,7 @@ margin-top: 30px;
 .all-mob-sec .sub-categories li {
     font-size: 13px;
     border-bottom: 1px solid red;
+    border-bottom:1px solid rgb(41, 41, 41);
 }
 .all-mob-sec .sub-categories a {
     margin-left: 15%;
