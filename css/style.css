@@ -9,10 +9,17 @@
 }
 
 .sub-categories {
-    display: none!important;
+    position: absolute;
+    opacity: 0;
+    color: black;
+    transition: all 0.3s ;
+    transform: translate(-10px);
 }
 
 
+.rotate {
+    transform: rotate(45deg);
+}
 
 :root {
     --fs-banner:1.2rem;
@@ -1051,6 +1058,15 @@ display: none;
     white-space: nowrap;
 }
 
+.opacity-0 {
+    opacity: 0;
+}
+
+#coffee:hover {
+    opacity: 1 ;
+}
+
+
 .banner-wrapper .banner-overlay .content h4 
 {
     display: inline-block;
@@ -1215,7 +1231,6 @@ display: none;
 .news-letter input:last-child:hover {
     opacity: 80%;
 }
-
 
 
 
@@ -2093,6 +2108,13 @@ font-size: 1.2rem;
 }
 .d-block {
     display: block !important;
+}
+
+.posittion-manipulate-block {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    
 }
 
 .mob-close-empty{
