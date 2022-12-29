@@ -1140,7 +1140,7 @@ display: none;
     z-index: 2;
 
     padding: 30px;
-    width: 80%;
+    max-width: 80%;
     height: auto;
     background-color: white;
     position: absolute;
@@ -2340,6 +2340,7 @@ font-size: 1.2rem;
     font-size: 1.30rem;
     font-weight: 300;
 }
+
 .toggle-menu .mob-menu .mob-row i {
        font-size: 1.5rem;
     color: white;
@@ -2368,6 +2369,17 @@ margin-top: 30px;
     font-weight: 100;
 }
 
+.mob-close-empty{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+
+}
+
 
 
     
@@ -2394,15 +2406,6 @@ margin-top: 30px;
     .banner-wrapper .banner-overlay .content h3 {
         white-space: normal;
     }
-    .banner-wrapper .banner-overlay .content h4 {
-    }
-    .banner-wrapper .banner-overlay .content h5 {
-    }
-
-    .banner-wrapper .banner-overlay .content h6 {
-    }
-
-
 }
 
 
@@ -2647,16 +2650,6 @@ margin-top: 30px;
     font-size: 12px;
 }
 
-.mob-close-empty{
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-    height: 100%;
-    width: 100%;
-
-}
 
 
 }
