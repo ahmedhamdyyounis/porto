@@ -4,20 +4,14 @@ let xmark = document.getElementById("xmark")
 let bars = document.getElementById("bars")
 let mobMenu = document.getElementById("mob-menu-wrapper")
 let menuCloseEmpty = document.getElementById("mob-close-empty")
-let angleDown = document.querySelectorAll(".fa-angle-down")
-let angleUp = document.querySelector(".fa-angle-up")
+let angleDown = document.getElementsByClassName("fa-angle-down")
+let angleUp = document.getElementsByClassName("fa-angle-up")
 let subCategorie = document.querySelector(".sub-categories")
 
-subCategorie.nextElementSibling.classList.add("products")
 
 let products = document.querySelector(".products")
 
 let cloned = bars.cloneNode(true)
-
-products.appendChild(cloned)
-
-
-
 
 
 
@@ -39,20 +33,6 @@ menuCloseEmpty.onclick = function () {
     mobMenu.style.display = "none"
     bars.style.display = "block"
 }
-
-angleDown[1].onclick = function () {
-    subCategorie.classList.add("d-block")
-    this.classList.add("d-none")
-    angleUp.setAttribute("style", "display:block!important;")
-}
-angleUp.onclick = function () {
-    subCategorie.classList.add("d-none")
-    subCategorie.classList.remove("d-block")
-    angleUp.setAttribute("style", "display:none!important;")
-    angleDown[1].classList.remove("d-none")
-    
-}
-
 
 //end toggle menu
 
@@ -113,6 +93,36 @@ function popAppear() {
 
 }
 
+
+let cof = document.getElementById("coffee")
+let flash = setInterval(theFlash, 1000);
+
+function theFlash() {
+    cof.classList.toggle("opacity-0")
+    
+}
+
+console.log(angleDown[4])
+
+let mobRow = document.getElementsByClassName("mob-row")
+let manipulate = document.getElementsByClassName("posittion-manipulate-block")
+
+for (let i =0;i<mobRow.length;i++) {
+    angleDown[i].addEventListener('click', () => {
+        mobRow[i].nextElementSibling.classList.toggle("posittion-manipulate-block")    
+        angleDown[i].classList.add("d-none")
+        angleDown[i].classList.remove("d-block")
+        angleUp[i].classList.add("d-block")
+        angleUp[i].classList.remove("d-none")
+    })    
+    angleUp[i].addEventListener('click', () => {
+        mobRow[i].nextElementSibling.classList.toggle("posittion-manipulate-block")
+        angleUp[i].classList.add("d-none")
+        angleUp[i].classList.remove("d-block")
+        angleDown[i].classList.add("d-block")
+        angleDown[i].classList.remove("d-none")
+    })
+}
 
 
 
