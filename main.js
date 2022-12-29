@@ -8,6 +8,18 @@ let angleDown = document.querySelectorAll(".fa-angle-down")
 let angleUp = document.querySelector(".fa-angle-up")
 let subCategorie = document.querySelector(".sub-categories")
 
+subCategorie.nextElementSibling.classList.add("products")
+
+let products = document.querySelector(".products")
+
+let cloned = bars.cloneNode(true)
+
+products.appendChild(cloned)
+
+
+
+
+
 
 console.log(angleDown)
 
@@ -84,18 +96,23 @@ console.log(popUpWrapper)
 
 close.onclick = function () {
     popUp.classList.add("d-none")
-    
+    window.onscroll = function () { window.scrollTo() };
 }
 
 popUpWrapper.onclick = function () {
     popUp.classList.add("d-none")
+    window.onscroll = function () { window.scrollTo() };
+
 }
+
+let theTimeout = setTimeout(popAppear, 3000)
 
 function popAppear() {
     popUp.style.cssText = "display:block;"
+    window.onscroll = function () { window.scrollTo(0, 0); };
+
 }
 
-setTimeout(popAppear, 3000)
 
 
 
