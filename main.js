@@ -15,7 +15,6 @@ let cloned = bars.cloneNode(true)
 
 
 
-console.log(angleDown)
 
 bars.onclick = function () {
     xmark.style.display = "block"
@@ -44,15 +43,15 @@ let opt2 = document.getElementById("two")
 let temp1 = document.getElementById("onee")
 let temp2 = document.getElementById("twoo")
 
-opt2.onclick = function () {
-        //active class green
-    opt1.classList.remove("act")
-    opt2.classList.add("act")
+opt2.addEventListener('click',function () {
+    //active class green
+opt1.classList.remove("act")
+opt2.classList.add("act")
 //template selection
-    temp2.classList.add("d-block")
-    temp1.classList.add("d-none")
-    temp1.classList.remove("d-block")
-}
+temp2.classList.add("d-block")
+temp1.classList.add("d-none")
+temp1.classList.remove("d-block")
+}) 
 
 
 opt1.onclick = function () {
@@ -106,6 +105,7 @@ console.log(angleDown[4])
 
 let mobRow = document.getElementsByClassName("mob-row")
 let manipulate = document.getElementsByClassName("posittion-manipulate-block")
+let subCat = document.getElementsByClassName("sub-categories")
 
 for (let i =0;i<mobRow.length;i++) {
     angleDown[i].addEventListener('click', () => {
@@ -114,6 +114,8 @@ for (let i =0;i<mobRow.length;i++) {
         angleDown[i].classList.remove("d-block")
         angleUp[i].classList.add("d-block")
         angleUp[i].classList.remove("d-none")
+        subCat[i].classList.remove("d-none")
+        
     })    
     angleUp[i].addEventListener('click', () => {
         mobRow[i].nextElementSibling.classList.toggle("posittion-manipulate-block")
@@ -121,6 +123,7 @@ for (let i =0;i<mobRow.length;i++) {
         angleUp[i].classList.remove("d-block")
         angleDown[i].classList.add("d-block")
         angleDown[i].classList.remove("d-none")
+        subCat[i].classList.add("d-none")
     })
 }
 
